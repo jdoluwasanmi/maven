@@ -24,6 +24,8 @@ run your new code with this command
 
 java -jar gs-spring-boot-0.3.0.jar
 
+to change your web message , go to /src/java/main/hello/Hello
+
 then go to 
 http://52.90.95.39:8080/ 
 to validate
