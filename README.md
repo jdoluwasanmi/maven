@@ -107,4 +107,4 @@ then go back to this link to copy this template: https://www.baeldung.com/maven-
 and validate, mvn package 
 mvn clean deploy
 
-
+vim pom.xml to update your version
