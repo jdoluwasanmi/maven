@@ -80,3 +80,31 @@ go to this link to copy this template: https://www.baeldung.com/maven-deploy-nex
 
 then go to your project in maven and edit pom.xml #19 - put the above info
 
+
+then go back to this link to copy this template: https://www.baeldung.com/maven-deploy-nexus,and modify it
+
+<servers>
+   <server>
+      <id>nexus-snapshots</id>
+      <username>deployment</username>
+      <password>the_pass_for_the_deployment_user</password>
+   </server>
+</servers>
+
+
+/opt/apache-maven-3.8.5/conf/settings.xml #133 to define your nexus credential
+   <server>
+      <id>nexus-snapshots</id>
+      <username>admin</username>
+      <password>password</password>
+   </server>
+   <server>
+      <id>nexus-releases</id>
+      <username>admin</username>
+      <password>password</password>
+   </server>
+
+and validate, mvn package 
+mvn clean deploy
+
+
