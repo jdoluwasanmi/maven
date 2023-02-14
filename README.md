@@ -54,3 +54,29 @@ after which you go into the pom.xml file and add the plugin.
 
 then go to sonarqube and generate a token to run the below command
 mvn sonar:sonar -Dsonar.host.url=http://192.168.0.59:9000/sonarqube -Dsonar.login=8a66f6086d5bd367a639c31fcf0d19cd16fb286a
+
+
+
+
+
+
+INTEGRATING MAVEN WITH NEXUS
+
+after setting up your maven and nexus
+
+go to this link to copy this template: https://www.baeldung.com/maven-deploy-nexus, then modify it to your nexus snapshot/release.
+
+<distributionManagement>
+   <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://192.168.0.35:8081/repository/maven-snapshots/</url>
+   </snapshotRepository>
+   <repository>
+      <id>nexus-releases</id>
+      <url>http://192.168.0.35:8081/repository/maven-releases/</url>
+   </repository>
+</distributionManagement>
+
+
+then go to your project in maven and edit pom.xml #19 - put the above info
+
