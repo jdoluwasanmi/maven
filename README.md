@@ -109,3 +109,6 @@ mvn clean deploy
 
 vim pom.xml to update your version
 vim pom.xml by removing snapshot so that it can go to maven_release
+
+
+
