@@ -111,4 +111,20 @@ vim pom.xml to update your version
 vim pom.xml by removing snapshot so that it can go to maven_release
 
 
+------to push youur app to dockerhub /amazonecr
+dockerhub
 
+docker login
+docker tag ...
+
+
+amazonecr
+aws ecr get-login-password --region us-east-1 | docker login -u AWS --password-stdin 933401714724.dkr.ecr.us-east-1.amazonaws.com/myapp:latest
+
+docker tag myapp:latest 933401714724.dkr.ecr.us-east-1.amazonaws.com/myapp:latest
+
+docker push 933401714724.dkr.ecr.us-east-1.amazonaws.com/myapp:latest
+[root@maven springboot-maven-micro]# docker push 933401714724.dkr.ecr.us-east-1.amazonaws.com/myapp:latest
+
+to validate your new pull from dockerhub or ecr
+<ip:port>/course-svc/GetAllDevOpTools 
