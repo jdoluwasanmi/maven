@@ -10,8 +10,8 @@ mvn -version
 yum install git -y
 git clone https://github.com/jdoluwasanmi/springboot-hello.git
 cd springboot-hello/
+validate your build 
 mvn validate
-validate your build  - cd target/
 now build your .jar package file 
 mvn package
 then go to cd target to see your new build
